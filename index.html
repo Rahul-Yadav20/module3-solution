@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dymore</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+  <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./CSS/index.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <!-- Dymore Logo -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><img src="./Images/logo.jpg" alt="Resturant Logo"
+            id="logo_img" /></a>
+
+        <!-- fssai Logo -->
+        <span class="fssai">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/019/017/427/original/fssai-logo-transparent-free-png.png"
+            alt="Img" id="fssai_logo" class="rounded-2" />
+          <a href="https://www.fssai.gov.in/" target="_blank" id="fssai_link">Fssai Certified</a>
+        </span>
+
+      </div>
+
+      <!-- Menu Buttons -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapse Class -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="nav m-2 ms-0 mb-lg-0 me-3">
+          <!-- Menu -->
+          <li class="nav-item">
+            <i class="fa-solid fa-utensils"></i>
+            <a class="nav-link active" aria-current="page" href="./Menu/menu.html">Menu</a>
+          </li>
+
+          <!-- About -->
+          <li class="nav-item">
+            <i class="fa-solid fa-circle-info"></i>
+            <a class="nav-link" href="#">About</a>
+          </li>
+
+          <!-- Cart -->
+          <li class="nav-item">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <a class="nav-link" href="#">Cart</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-danger" type="submit">Search</button>
+        </form>
+      </div> <!-- Collapse End -->
+    </div> <!-- Container End -->
+  </nav>
+
+  <!-- Carousel Slides -->
+  <div id="carouselExample" class="carousel slide carousel-fade carousel-dark mt-1" data-bs-touch="false"
+    data-bs-ride="carousel">
+
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+
+
+    <div class="carousel-inner">
+
+      <!-- Carousel Image 1 -->
+      <div class="carousel-item active ">
+        <img src="./Images/1200/resturant-1900x600.jpg" class="carousel-img img-fluid" alt="..." />
+      </div>
+
+      <!-- Carousel Image 2 -->
+      <div class="carousel-item ">
+        <img src="./Images/1200/food-banner-1.jpg" alt="..." id="ban-img2" class="carousel-img img-fluid" />
+      </div>
+
+      <!-- Carousel Image 3 -->
+      <div class="carousel-item">
+        <img src="./Images/1200/food-banner-2.jpg" class="carousel-img img-fuild" alt="..." />
+      </div>
+    </div>
+
+    <!-- Carousel Previous -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+      <span class="visually-hidden d-xs-none">Previous</span>
+    </button>
+
+    <!-- Carousel Next -->
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden d-xs-none">Next</span>
+    </button>
+
+  </div> <!-- Carousel End -->
+
+  <div class="container-fluid mt-3">
+    <div class="row justify-content-around">
+
+      <!-- Menu Card -->
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-3">
+        <div class="card">
+          <a href="./Menu/menu.html"><img src="./Images/Category-Images/image1.jpg" class="card-img-top" alt="..." /></a>
+
+          <a class="btn rounded-0 button-lap" href="./Menu/menu.html">
+            MENU
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Special Card -->
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-3">
+        <div class="card">
+
+          <a href="special.html">
+            <img src="./Images/Category-Images/image2.jpg" class="card-img-top" alt="..." />
+          </a>
+
+          <a class="btn rounded-0 button-lap" href="special.html">
+            SPECIAL
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Map Card-->
+      <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 mb-3">
+        <div class="card">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13975.252093430518!2d78.7528797!3d28.874178999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390af95c2aeaafa7%3A0x34b5db95bb3fd576!2sDyomore%20Cafe%2C%20Patisserie%20%26%20Restro%20Bar!5e0!3m2!1sen!2sin!4v1693989980016!5m2!1sen!2sin"
+            width="100%" height="265px"></iframe>
+
+        </div>
+      </div>
+
+    </div> <!-- Row End  -->
+  </div> <!-- Container End -->
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <div class="container-fluid">
+      <div class="row justify-content-around foot-row">
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-2 ">
+
+          <!-- Timing -->
+          <section class="lh-sm">
+            <p class="fs-4 "><b>Timing:</b></p>
+            <p>Sun-Thurs: 11:15am - 10pm</p>
+            <p>Fri: 11:00am - 3:00pm</p>
+            <p>Saturday Closed</p>
+            <hr class="d-lg-none d-md-none d-sm-none d-xs-block mt-3" style="border: 2px solid lightblue">
+          </section>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-3 ">
+          <!-- Address -->
+          <section class="lh-1">
+            <p class="fs-4"><b>Address:</b></p>
+            <p>
+              Hc 14, Ashiyana Colony, Tilokpur,
+              Ram Ganga Vihar Phase 2,
+              Moradabad, Uttar Pradesh 244001
+            </p>
+
+            <div class="text-success">
+              <p><i>*Free delivery in 5km area</i></p>
+
+              <p><i>*Delivery charges can vary for far delivery</i></p>
+            </div>
+
+          </section>
+        </div>
+
+        <div class="col-lg-3 mb-3">
+
+          <!-- Captions -->
+          <section id="column-3">
+            </p>
+            <i>"A one stop for all environment and food craving full of alluring ambiences , vibes and appetizing
+              delicacies."</i>
+            <p>
+
+            <p>
+              <i>"Immerse youself in a world of culinary delights where passion meets perfection."</i>
+            </p>
+
+          </section>
+        </div>
+        <div class="text-center copywrite">
+          <p><b>&copy; Copyright CodeWriter 2023</b></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
